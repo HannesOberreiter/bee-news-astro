@@ -19,6 +19,9 @@ import compress from "astro-compress";
 import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
+import webmanifest from "astro-webmanifest";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://www.beekeeping-news.com/",
   integrations: [
@@ -34,10 +37,35 @@ export default defineConfig({
         },
       },
     }),
-    robotsTxt({ host: true, sitemap: true }),
+    robotsTxt({
+      host: true,
+      sitemap: true,
+    }),
     compress({
       img: false,
       svg: false,
+    }),
+    webmanifest({
+      name: "Beekeeping News",
+      icon: "src/images/icon.png",
+      short_name: "Bee News",
+      description:
+        "A curated selection of worldwide feeds related around the topic of beekeeping and honeybees.",
+      start_url: "/",
+      theme_color: "#fdba74",
+      background_color: "#feedd5",
+      display: "standalone",
+      lang: "en",
+      locales: {
+        de: {
+          name: "Imkerei Nachrichten",
+          short_name: "Bienen News",
+          description:
+            "Eine kuratierte Auswahl weltweiter Feeds rund um das Thema Bienenzucht und Honigbienen.",
+          lang: "de",
+          start_url: "/de",
+        },
+      },
     }),
   ],
 });
