@@ -158,3 +158,5 @@ function clearAll() {
   store().value = setStore(store().value, props.name, []);
 }
 </script>
+
+<style src="vue-multiselect/dist/vue-multiselect.css"></style>

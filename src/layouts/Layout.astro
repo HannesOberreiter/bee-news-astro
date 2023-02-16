@@ -107,10 +107,6 @@ import { HeadHrefLangs } from "astro-i18next/components";
       content="/icons/mstile-310x310.png"
     />
     <meta name="application-name" content="Bee News" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/vue-multiselect@2.1.6/dist/vue-multiselect.min.css"
-    />
     <meta name="generator" content={Astro.generator} />
     <title>{t("site.title")}</title>
     <meta name="description" content={t("site.description")} />
@@ -131,5 +127,27 @@ import { HeadHrefLangs } from "astro-i18next/components";
         font-family: system-ui, sans-serif;
       }
     </style>
-  </body>
+    <script>
+      if (window.location.hostname === "localhost") {
+        console.log("Dev mode, analytics is not loaded");
+      } else {
+        var _paq = (window._paq = window._paq || []);
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["disableCookies"]);
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+        (function () {
+          var u = "https://analytics.btree.at/";
+          _paq.push(["setTrackerUrl", u + "matomo.php"]);
+          _paq.push(["setSiteId", "2"]);
+          var d = document,
+            g = d.createElement("script"),
+            s = d.getElementsByTagName("script")[0];
+          g.async = true;
+          g.src = u + "matomo.js";
+          s.parentNode.insertBefore(g, s);
+        })();
+      }
+    </script>
+  </body><!-- Matomo -->
 </html>
