@@ -9,7 +9,7 @@
         }})
       </div>
       <div>
-        <span v-if="isNew(item.attributes.published, lastVisit)"> 🔥 </span>
+        <span v-if="isNew(item.attributes.createdAt, lastVisit)"> 🔥 </span>
         <NewsBadge
           :class="{
             'bg-orange-300': isLatestNews(item.attributes.published),
