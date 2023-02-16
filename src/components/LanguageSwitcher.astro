@@ -1,0 +1,12 @@
+---
+import i18next, { t } from "i18next";
+
+const deClasses = i18next.language === "de" ? "text-gray-400" : "";
+const enClasses = i18next.language === "en" ? "text-gray-400" : "";
+---
+
+<div class="flex items-center gap-2">
+  <b>{t("language")}:</b>
+  <a href="/de" class:list={["hover:text-green-500", deClasses]}>Deutsch</a>
+  <a href="/" class:list={["hover:text-green-500", enClasses]}>English</a>
+</div>

@@ -1,0 +1,42 @@
+{
+  "about": "Welcome to 'Beekeeping News' a collection of various beekeeping and honeybee related feeds and news pages. If you want your beekeeping blog or maybe beekeeping club news page added or found a useful addition to the list please contact me (link below). The same is true if you want to be removed from the list, on this note I only use public available sources.",
+  "advertisement": "Advertisement",
+  "categories": "Categories",
+  "colorMode": "Colour mode",
+  "errorLoading": "Could not load data",
+  "filter": {
+    "categories": "Categories",
+    "language": "Language",
+    "sources": "Sources"
+  },
+  "imprint": "Imprint",
+  "language": "Language",
+  "languages": "Languages",
+  "loading": "Loading",
+  "noEntries": "No entries found!",
+  "options": {
+    "description": "With these dropdowns you can further filter the beekeeping news results.",
+    "title": "Filtering Options"
+  },
+  "pagination": {
+    "of": "of",
+    "page": "Page",
+    "total": "Total entries"
+  },
+  "privacy": {
+    "analytics": "Anonymized statistics with Matomo Analytics",
+    "cookies": "No cookies",
+    "localStorage": "Local storage for persistence filter",
+    "optOut": "Browser opt-out is recognised",
+    "title": "Data-Privacy"
+  },
+  "searchPlaceholder": "Search",
+  "select": "Select",
+  "site": {
+    "description": "A curated selection of worldwide feeds related around the topic of beekeeping and honeybees.",
+    "title": "Beekeeping News"
+  },
+  "sources": "Sources",
+  "sponsored": "Sponsored",
+  "today": "Today"
+}

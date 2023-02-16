@@ -1,0 +1,35 @@
+---
+import i18next, { t, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import NewsList from "../../components/NewsList.vue";
+import Options from "../../components/Options.astro";
+
+changeLanguage("de");
+---
+
+<Layout title="Beekeeping News">
+  <main class="md:container md:mx-auto p-3">
+    <section class="py-5">
+      <span class="text-3xl">{t("site.title")}</span>
+      <div class="flex flex-col lg:flex-row">
+        <div class="w-full lg:w-3/4 lg:pr-4">
+          <div class="grid grid-cols-1 gap-4">
+            <hr />
+            <small>
+              {t("site.description")}
+            </small>
+
+            <div>
+              <NewsList currentLanguage={i18next.language} client:only />
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full p-2 lg:w-1/4 mt-4 lg:mt-0 rounded bg-orange-100 border border-orange-200 dark:bg-gray-700 dark:border-amber-700"
+        >
+          <Options />
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

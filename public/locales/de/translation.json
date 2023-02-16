@@ -1,0 +1,42 @@
+{
+  "about": "Willkommen bei den 'Imkerei Nachrichten', einer Sammlung verschiedener Feeds und Nachrichtenseiten zur Bienenzucht und Honigbiene. Wenn Sie möchten, dass Ihr Imkereiblog oder vielleicht die Nachrichtenseite eines Imkervereins in die Liste aufgenommen wird oder Sie eine nützliche Ergänzung gefunden haben, kontaktieren Sie mich bitte (Link unten). Dasselbe gilt, wenn Sie aus der Liste gestrichen werden möchten. In diesem Zusammenhang  möchte ich erwähnen, dass ich nur öffentlich zugängliche Quellen verwende.",
+  "advertisement": "Werbung",
+  "categories": "Kategorien",
+  "colorMode": "Farbmodus",
+  "errorLoading": "Daten konnten nicht geladen werden",
+  "filter": {
+    "categories": "Kategorien",
+    "language": "Sprache",
+    "sources": "Quellen"
+  },
+  "imprint": "Impressum",
+  "language": "Sprache",
+  "languages": "Sprachen",
+  "loading": "Laden",
+  "noEntries": "Keine Einträge gefunden!",
+  "options": {
+    "description": "Hier können Sie die Imkerei Nachrichten anhand von Kategorien filtern.",
+    "title": "Filteroptionen"
+  },
+  "pagination": {
+    "of": "von",
+    "page": "Seite",
+    "total": "Gesamteinträge"
+  },
+  "privacy": {
+    "analytics": "Anonymisierte Statistiken mit Matomo Analytics",
+    "cookies": "Keine Cookies",
+    "localStorage": "Lokaler Speicher zur Speicherung von Filtern",
+    "optOut": "Browser-Opt-out wird erkannt",
+    "title": "Datenschutz"
+  },
+  "searchPlaceholder": "Suche",
+  "select": "Auswählen",
+  "site": {
+    "description": "Eine kuratierte Auswahl weltweiter Feeds rund um das Thema Bienenzucht und Honigbienen.",
+    "title": "Imkerei Nachrichten"
+  },
+  "sources": "Quellen",
+  "sponsored": "Gesponsert",
+  "today": "Heute"
+}

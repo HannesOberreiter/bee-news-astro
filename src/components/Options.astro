@@ -1,0 +1,44 @@
+---
+import i18next, { t } from "i18next";
+
+import SelectFilter from "../components/SelectFilter.vue";
+import ButtonMode from "../components/ButtonMode.vue";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+---
+
+<div class="lg:block">
+  <div class="text-xl pb-2">{t("options.title")}</div>
+  <div class="text-sm pb-2">
+    {t("options.description")}
+  </div>
+  <div class="flex flex-col gap-3 pb-2">
+    <SelectFilter name="categories" lang={i18next.language} client:only />
+    <SelectFilter name="languages" lang={i18next.language} client:only />
+    <SelectFilter name="sources" lang={i18next.language} client:only />
+  </div>
+
+  <div class="text-sm text-justify">
+    {t("about")}
+  </div>
+  <br />
+  <ButtonMode client:only />
+  <br />
+  <LanguageSwitcher />
+  <br />
+
+  <div class="text-sm align-baseline">
+    <div>
+      <b>{t("imprint")}</b> © Hannes Oberreiter,
+      <a href="www.btree.at">btree.at</a>
+    </div>
+    <div>
+      <b>{t("privacy.title")}</b>
+      <ul>
+        <li>- {t("privacy.cookies")}</li>
+        <li>- {t("privacy.localStorage")}</li>
+        <li>- {t("privacy.analytics")}</li>
+        <li>- {t("privacy.optOut")}</li>
+      </ul>
+    </div>
+  </div>
+</div>
