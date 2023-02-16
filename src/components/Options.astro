@@ -26,19 +26,30 @@ import LanguageSwitcher from "./LanguageSwitcher.astro";
   <LanguageSwitcher />
   <br />
 
-  <div class="text-sm align-baseline">
+  <div class="text-sm align-baseline text-center">
     <div>
-      <b>{t("imprint")}</b> © Hannes Oberreiter,
-      <a href="www.btree.at">btree.at</a>
+      <b>{t("imprint")}</b>
+      <br />
+      © Hannes Oberreiter, <a href="www.btree.at">btree.at</a>
     </div>
     <div>
-      <b>{t("privacy.title")}</b>
+      <b>{t("privacy.title")}</b><br />
       <ul>
         <li>- {t("privacy.cookies")}</li>
         <li>- {t("privacy.localStorage")}</li>
         <li>- {t("privacy.analytics")}</li>
         <li>- {t("privacy.optOut")}</li>
       </ul>
+    </div>
+    <div>
+      <b>OpenSource</b><br />
+      <a
+        href="https://github.com/HannesOberreiter/bee-news-astro"
+        class="inline-flex"
+      >
+        <img src="/github-mark.svg" class="w-5 mr-3" alt="GitHub Logo" />
+        /HannesOberreiter/bee-news-astro
+      </a>
     </div>
   </div>
 </div>

@@ -44,6 +44,7 @@ export default defineConfig({
     compress({
       img: false,
       svg: false,
+      html: false,
     }),
     webmanifest({
       name: "Beekeeping News",

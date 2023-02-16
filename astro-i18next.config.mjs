@@ -3,5 +3,8 @@ export default {
   defaultLocale: "en",
   locales: ["en", "de"],
   showDefaultLocale: true,
-  load: ["server", "client"],
+  load: ["client", "server"],
+  i18nextClient: {
+    fallbackLng: "en",
+  },
 };
