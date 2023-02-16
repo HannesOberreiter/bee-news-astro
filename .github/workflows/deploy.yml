@@ -31,7 +31,7 @@ jobs:
       - name: Generate
         run: npm run build
       - name: List output files
-        run: ls
+        run: cd dist && ls -la
 
       - name: Upload Files
         uses: Creepios/sftp-action@v1.0.3
@@ -40,5 +40,5 @@ jobs:
           port: 22
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localPath: "./dist"
+          localPath: "."
           remotePath: "./beekeeping-news.com/dist"
