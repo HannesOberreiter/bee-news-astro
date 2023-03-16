@@ -21,11 +21,13 @@
     {{ item.attributes.url }}
     <p class="text-sm cursor-pointer" v-html="item.attributes.preview"></p>
 
-    <div class="flex items-center gap-2 pt-2">
+    <!--
+     <div class="flex items-center gap-2 pt-2">
       <NewsBadge class="bg-orange-300">
         {{ t("advertisement") }}
       </NewsBadge>
-    </div>
+     </div>
+     -->
   </div>
 </template>
 
