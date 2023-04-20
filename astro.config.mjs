@@ -21,6 +21,8 @@ import robotsTxt from "astro-robots-txt";
 // https://astro.build/config
 import webmanifest from "astro-webmanifest";
 
+import svgLoader from "vite-svg-loader";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.beekeeping-news.com/",
@@ -69,4 +71,7 @@ export default defineConfig({
       },
     }),
   ],
+  vite: {
+    plugins: [vue(), svgLoader()],
+  },
 });

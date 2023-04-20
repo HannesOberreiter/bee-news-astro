@@ -16,11 +16,7 @@
     <div class="text-lg font-bold">
       <a :href="item.attributes.link" target="_blank">
         {{ item.attributes.title }}
-        <img
-          src="/link-arrow.svg"
-          class="w-4 inline-flex mb-1"
-          alt="Left up arrow inside a box, indicating outgoing link"
-        />
+        <IconLinkArrow />
       </a>
     </div>
     {{ item.attributes.url }}
@@ -39,6 +35,7 @@
 <script setup lang="ts">
 import NewsBadge from "./NewsBadge.vue";
 import { t } from "i18next";
+import IconLinkArrow from "./IconLinkArrow.vue";
 
 defineProps({
   item: {
