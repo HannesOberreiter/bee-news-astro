@@ -13,9 +13,6 @@ import astroI18next from "astro-i18next";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
-import compress from "astro-compress";
-
-// https://astro.build/config
 import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
@@ -40,11 +37,6 @@ export default defineConfig({
     robotsTxt({
       host: true,
       sitemap: true,
-    }),
-    compress({
-      img: false,
-      svg: false,
-      html: false,
     }),
     webmanifest({
       name: "Beekeeping News",
